@@ -16,7 +16,6 @@ res: ${res},
 newArr: ${newArr},
 fetchRes: ${fetchRes}
 `)
-fetch('./dist/main.min.css').then(res=>fetchRes=res)
 console.log(`
 arrowFn: ${arrowFn},
 arrA: ${arrA},
