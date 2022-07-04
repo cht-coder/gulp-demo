@@ -66,8 +66,8 @@ function htmlChanges() {
   return src(["./src/*.html"])
     .pipe(
       htmlReplace({
-        js: { src: "/js", tpl: '<script src="%s/main.min.js"></script>' },
-        css: { src: "/css", tpl: '<link src="%s/main.min.css" />' },
+        js: { src: "./js", tpl: '<script src="%s/main.min.js"></script>' },
+        css: { src: "./css", tpl: '<link src="%s/main.min.css" />' },
       })
     )
     .pipe(dest(paths.dist));
